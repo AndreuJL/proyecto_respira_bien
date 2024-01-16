@@ -3,42 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Respira Bien</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/procesa.js"></script>
   </head>
   <body>
-      <header>
-        <a href="">
-          <img src="/svg/config.svg" alt="configuracion">
-        </a>
+    <header>
+      <a href="ajustes.html">
+        <img src="/svg/config.svg" alt="configuracion" />
+      </a>
+     
+      <img src="/svg/logo.svg" alt="logo" />
+      
+    </header>
+    <main>
+      <section class="empezar">
+        <h4>Empezar (5min)</h4>
+        <img
+          src="/svg/encendido_apagado.svg"
+          alt="encendido/apagado"
+          id="boton_encendido"
+        />
+      </section>
 
-        <a href="">
-          <img src="/svg/logo.svg" alt="logo">
-        </a>
-      </header>
-      <main>
+      <section class="rueda" id="rueda">
+        <div class="verde">
+          <p class="letra__rueda">INHALA</p>
+        </div>
+        <div class="azul__derecha">
+          <p class="letra__rueda">MANTIENE</p>
+        </div>
+        <div class="azul__izquierda">
+          <P class="letra__rueda">MANTIENE</P>
+        </div>
+        <div class="lila">
+          <P class="letra__rueda">EXHALA</P>
+        </div>
 
-        <section class="empezar">
-          <h4>Empezar (5min)</h4>
-          <img src="/svg/encendido_apagado.svg" alt="encendido/apagado" id="boton_encendido">
-        </section>
+        <div class="aguja" id="aguja"></div>
+      </section>
+    </main>
 
-
-        <section class="rueda" id="rueda">
-          <div class="verde"></div>
-          <div class="azul__derecha"></div>
-          <div class="azul__izquierda"></div>
-          <div class="lila"></div>
-                   
-          <div class="aguja" id="encendido"></div>
-
-        </section>
-
-      </main>
-
-      <footer>
-          <a href="">Política de privacidad</a>
-      </footer>
-
+    <footer>
+      <a href="">Política de privacidad</a>
+    </footer>
   </body>
 </html>

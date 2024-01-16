@@ -27,6 +27,7 @@
   /* numbers */
   --h4: 1rem;
   --p: 1rem;
+  --p-letra-rueda: 1.2rem;
 }
 
 body {
@@ -83,21 +84,57 @@ body {
       & .verde {
         background: var(--color-inhalar);
         border-radius: 100% 0 0 0;
+
+        display: flex;
+        align-items: end;
+        justify-content: end;
+
+        & .letra__rueda {
+          display: block;
+          margin: 30px;
+          font-size: var(--p-letra-rueda);
+        }
       }
 
       & .azul__derecha {
         background: var(--color-mantener);
         border-radius: 0% 100% 0 0;
+
+        display: flex;
+        align-items: end;
+        justify-content: start;
+
+        & .letra__rueda {
+          display: block;
+          margin: 30px;
+          font-size: var(--p-letra-rueda);
+        }
       }
 
       & .lila {
         background: var(--color-exhalar);
         border-radius: 0 0 100% 0;
+
+        & .letra__rueda {
+          display: block;
+          margin: 30px;
+          font-size: var(--p-letra-rueda);
+        }
       }
 
       & .azul__izquierda {
         background: var(--color-mantener);
         border-radius: 0 0 0 100%;
+
+        display: flex;
+        align-items: start;
+        justify-content: end;
+
+        & .letra__rueda {
+          display: block;
+          margin: 30px;
+          font-size: var(--p-letra-rueda);
+        }
       }
 
       & .aguja {
@@ -117,6 +154,113 @@ body {
         transition: transform 300s;
         transition-timing-function: linear;
       }
+    }
+
+    /* -------------- AJUSTES ------------- */
+
+    & .ajustes__fondos {
+      background-color: var(--color-mantener);
+      margin: 0 10%;
+      border: solid black 2px;
+      border-radius: 20px;
+      font-size: var(--p-letra-rueda);
+
+      & .titulo__fondos {
+        display: flex;
+        justify-content: center;
+        color: var(--color-letra);
+        border-bottom: solid black 2px;
+      }
+
+      & .fondos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+        & .circulo__fondo {
+          width: 70px;
+          height: 70px;
+          margin: 15px;
+          border-radius: 50%;
+        }
+
+        & .gris {
+          background: var(--color-fondo);
+        }
+
+        & .oscuro {
+          background: var(--color-fondo-oscuro);
+        }
+
+        & .mar {
+          @media (-webkit-min-device-pixel-ratio: 1) {
+            background-image: url(../img/smartphone/fondo_mar\ 1.webp);
+          }
+
+          @media (-webkit-min-device-pixel-ratio: 2) {
+            background-image: url(../img/smartphone/fondo_mar\ 1@2x.webp);
+          }
+
+          @media (-webkit-min-device-pixel-ratio: 3) {
+            background-image: url(../img/smartphone/fondo_mar\ 1@3x.webp);
+          }
+
+          background-size: 100%;
+        }
+
+        & .cascada {
+          @media (-webkit-min-device-pixel-ratio: 1) {
+            background-image: url(../img/smartphone/fondo_cascada\ 1.webp);
+          }
+
+          @media (-webkit-min-device-pixel-ratio: 2) {
+            background-image: url(../img/smartphone/fondo_cascada\ 1@2x.webp);
+          }
+
+          @media (-webkit-min-device-pixel-ratio: 3) {
+            background-image: url(../img/smartphone/fondo_cascada\ 1@3x.webp);
+          }
+
+          background-size: 100%;
+        }
+
+        & .cielo {
+          @media (-webkit-min-device-pixel-ratio: 1) {
+            background-image: url(../img/smartphone/fondo_cielo\ 1.webp);
+          }
+
+          @media (-webkit-min-device-pixel-ratio: 2) {
+            background-image: url(../img/smartphone/fondo_cielo\ 1@2x.webp);
+          }
+
+          @media (-webkit-min-device-pixel-ratio: 3) {
+            background-image: url(../img/smartphone/fondo_cielo\ 1@3x.webp);
+          }
+
+          background-size: 100%;
+        }
+
+        & .flores {
+          @media (-webkit-min-device-pixel-ratio: 1) {
+            background-image: url(../img/smartphone/fondo_flores\ 1.webp);
+          }
+
+          @media (-webkit-min-device-pixel-ratio: 2) {
+            background-image: url(../img/smartphone/fondo_flores\ 1@2x.webp);
+          }
+
+          @media (-webkit-min-device-pixel-ratio: 3) {
+            background-image: url(../img/smartphone/fondo_flores\ 1@3x.webp);
+          }
+
+          background-size: 100%;
+        }
+      }
+    }
+
+    & .ajustes__alarma{
+
     }
   }
 
