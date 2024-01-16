@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/procesa.js"></script>
   </head>
   <body>
       <header>
@@ -19,17 +20,18 @@
 
         <section class="empezar">
           <h4>Empezar (5min)</h4>
-          <img src="/svg/encendido_apagado.svg" alt="encendido/apagado">
+          <img src="/svg/encendido_apagado.svg" alt="encendido/apagado" id="boton_encendido">
         </section>
 
 
-        <section class="rueda">
+        <section class="rueda" id="rueda">
           <div class="verde"></div>
           <div class="azul__derecha"></div>
           <div class="azul__izquierda"></div>
-          <div class="lila"></div>    
-          
-          <div class="aguja movimiento"></div>         
+          <div class="lila"></div>
+                   
+          <div class="aguja" id="encendido"></div>
+
         </section>
 
       </main>

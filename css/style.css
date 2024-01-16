@@ -111,25 +111,19 @@ body {
         border-radius: 5px;
       }
 
-      /* --------MOVIMIENTO--------- */
-      & .movimiento {
-        transition: transform 0s;
-      }
-
       & .movimiento {
         transform-origin: right;
-        transform: rotate(360deg);
-        transition: transform 25s;
+        transform: rotate(calc(360deg * 30));
+        transition: transform 300s;
         transition-timing-function: linear;
       }
-
-      /* --------------------------- */
     }
   }
 
   footer {
     width: 100%;
     height: 40px;
+    padding-left: 28px;
 
     & a {
       text-decoration: none;
