@@ -260,7 +260,24 @@ body {
     }
 
     & .ajustes__alarma{
+      background-color: var(--color-mantener);
+      margin: 0 10%;
+      border: solid black 2px;
+      border-radius: 20px;
+      font-size: var(--p-letra-rueda);
+      width: 80%;
+      
 
+      & .titulo__alarma{
+        display: flex;
+        justify-content: center;
+        color: var(--color-letra);
+        border-bottom: solid black 2px;
+      }
+
+      & .cuerpo__alarma{
+        height: 150px;
+      }
     }
   }
 
