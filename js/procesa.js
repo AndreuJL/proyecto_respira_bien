@@ -15,78 +15,51 @@ document.addEventListener("DOMContentLoaded", function () {
   let oscuro = document.getElementById("oscuro");
   let mar = document.getElementById("mar");
 
-
+  // Si se pulsa en el icono de fondo se cambia el color de fondo y se elimina el background-image y el background-size anterior si hay.
+  // Finalmente guardamos el color en un localStorage para llamarlo cuando se abra otra página html.
   gris.addEventListener("click", function () {
     document.body.style.backgroundColor = "#dadada";
     document.body.style.removeProperty("background-image");
     document.body.style.removeProperty("background-size");
+
+    localStorage.setItem("fondo", "#dadada");
   });
 
   oscuro.addEventListener("click", function () {
-    document.body.style.backgroundColor = '#4c4c4c';
+    document.body.style.backgroundColor = "#4c4c4c";
     document.body.style.removeProperty("background-image");
     document.body.style.removeProperty("background-size");
 
-    // Cogiendo el backgroundColor con una cookie
-    // let color_oscuro = document.getElementById("oscuro").style.backgroundColor;
-    // setCookie("cookie_oscuro", color_oscuro, 365);
-    // let color_cookie_oscuro = getCookie("cookie_oscuro");
-    // document.body.style.backgroundColor = 'color_cookie_oscuro';
+    localStorage.setItem("fondo", "#4c4c4c");
   });
 
+  // Si se pulsa en el icono de fondo se pone una imagen de fondo y se elimina el background-image y el background-size anterior si hay.
+  // Finalmente guardamos la imagen de fondo en un localStorage para llamarlo cuando se abra otra página html.
   mar.addEventListener("click", function () {
     document.body.style.backgroundImage = "url('../img/smartphone/fondo_mar 1.webp')";
     document.body.style.backgroundSize = "cover";
+
+    localStorage.setItem("fondo", "url('../img/smartphone/fondo_mar 1.webp')");
   });
 
   cascada.addEventListener("click", function () {
     document.body.style.backgroundImage = "url('../img/smartphone/fondo_cascada 1.webp')";
     document.body.style.backgroundSize = "cover";
-  })
+
+    localStorage.setItem("fondo", "url('../img/smartphone/fondo_cascada 1.webp')");
+  });
 
   cielo.addEventListener("click", function () {
-    document.body.style.backgroundImage =
-      "url('../img/smartphone/fondo_cielo 1.webp')";
+    document.body.style.backgroundImage = "url('../img/smartphone/fondo_cielo 1.webp')";
     document.body.style.backgroundSize = "cover";
+
+    localStorage.setItem("fondo", "url('../img/smartphone/fondo_cielo 1.webp')");
   });
 
   flores.addEventListener("click", function () {
-    document.body.style.backgroundImage =
-      "url('../img/smartphone/fondo_flores 1.webp')";
+    document.body.style.backgroundImage = "url('../img/smartphone/fondo_flores 1.webp')";
     document.body.style.backgroundSize = "cover";
+
+    localStorage.setItem("fondo", "url('../img/smartphone/fondo_flores 1.webp')");
   });
-
-
-  
-
-
 });
-
-
-// Función para escribir una cookie (crea o actualiza una cookie)
-// - c_name:	nombre de la cookie
-// - value: 	valor de la cookie
-// - exdays:	fecha de expiración (caducidad)
-function setCookie(c_name, value, exdays) {
-  let exdate = new Date();
-  exdate.setDate(exdate.getDate() + exdays);
-  let c_value =
-    escape(value) + (exdays == null ? "" : "; expires=" + exdate.toUTCString());
-  document.cookie = c_name + "=" + c_value;
-}
-
-// Función para leer una cookie (muestra el valor de esa cookie)
-// - c_name:	nombre de la cookie
-function getCookie(c_name) {
-  let i, x, y;
-  let ARRcookies = document.cookie.split(";");
-  for (i = 0; i < ARRcookies.length; i++) {
-    x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
-    y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
-    x = x.replace(/^\s+|\s+$/g, "");
-
-    if (x == c_name) {
-      return unescape(y);
-    }
-  }
-}
