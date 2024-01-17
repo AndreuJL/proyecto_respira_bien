@@ -9,23 +9,23 @@ if (color_fondo == "#4c4c4c") {
   document.body.style.removeProperty("background-image");
   document.body.style.backgroundColor == "#dadada";
 
-} else if (color_fondo == "url('../img/smartphone/fondo_mar 1.webp')") {
+} else if (color_fondo == "url('img/smartphone/fondo_mar 1.webp')") {
   document.body.style.removeProperty("background-image");
-  document.body.style.backgroundImage = "url('../img/smartphone/fondo_mar 1.webp')";
+  document.body.style.backgroundImage = "url('img/smartphone/fondo_mar 1.webp')";
   document.body.style.backgroundSize = "cover";
 
-} else if (color_fondo == "url('../img/smartphone/fondo_cascada 1.webp')") {
+} else if (color_fondo == "url('img/smartphone/fondo_cascada 1.webp')") {
   document.body.style.removeProperty("background-image");
-  document.body.style.backgroundImage = "url('../img/smartphone/fondo_cascada 1.webp')";
+  document.body.style.backgroundImage = "url('img/smartphone/fondo_cascada 1.webp')";
   document.body.style.backgroundSize = "cover";
 
-} else if (color_fondo == "url('../img/smartphone/fondo_cielo 1.webp')") {
+} else if (color_fondo == "url('img/smartphone/fondo_cielo 1.webp')") {
   document.body.style.removeProperty("background-image");
-  document.body.style.backgroundImage = "url('../img/smartphone/fondo_cielo 1.webp')";
+  document.body.style.backgroundImage = "url('img/smartphone/fondo_cielo 1.webp')";
   document.body.style.backgroundSize = "cover";
   
-} else if (color_fondo == "url('../img/smartphone/fondo_flores 1.webp')") {
+} else if (color_fondo == "url('img/smartphone/fondo_flores 1.webp')") {
   document.body.style.removeProperty("background-image");
-  document.body.style.backgroundImage = "url('../img/smartphone/fondo_flores 1.webp')";
+  document.body.style.backgroundImage = "url('img/smartphone/fondo_flores 1.webp')";
   document.body.style.backgroundSize = "cover";
 }
