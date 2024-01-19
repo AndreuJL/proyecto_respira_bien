@@ -49,6 +49,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    & img{
+      width: 55px;
+      height: 55px;
+    }
   }
 
   & main {
